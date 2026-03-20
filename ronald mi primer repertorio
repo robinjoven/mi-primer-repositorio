@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid - Página Oficial</title>
+
+    <style>
+        :root {
+            --primary: #000;
+            --secondary: #d4af37;
+            --bg: #f4f4f4;
+            --white: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg);
+        }
+
+        header {
+            background: var(--white);
+            text-align: center;
+            padding: 20px;
+            border-bottom: 4px solid var(--secondary);
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+        }
+
+        nav {
+            background: var(--primary);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 12px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background: var(--white);
+        }
+
+        .hero img {
+            max-width: 150px;
+            opacity: 0.9;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .content h2 {
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .players {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .players li {
+            background: var(--secondary);
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero img {
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Real Madrid C.F.</h1>
+    <p>El club más grande del mundo</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Plantilla</a>
+    <a href="#">Historia</a>
+    <a href="#">Títulos</a>
+</nav>
+
+<section class="hero">
+    <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Escudo Real Madrid">
+</section>
+
+<section class="content">
+    <h2>Bienvenido</h2>
+    <p>
+        El Real Madrid Club de Fútbol es uno de los equipos más exitosos de la historia.
+        Fundado en 1902, ha ganado múltiples títulos nacionales e internacionales,
+        incluyendo la UEFA Champions League.
+    </p>
+
+    <h3>Jugadores Destacados</h3>
+    <ul class="players">
+        <li>Vinícius Jr.</li>
+        <li>Jude Bellingham</li>
+        <li>Luka Modrić</li>
+        <li>Toni Kroos</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 Real Madrid Fan Page</p>
+</footer>
+
+</body>
+</html>
